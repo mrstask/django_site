@@ -1,0 +1,30 @@
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*}*/
+
+/*.container, .menu, .footer {*/
+/*    margin-top: 20px;*/
+/*	background-color: white;*/
+/*	max-width: 900px;*/
+
+/*}*/
+/*body.custom-background {*/
+/*	background-image: url("/static/image/background.jpg");*/
+/*	background-position: center top;*/
+/*	background-size: auto;*/
+/*	background-repeat: no-repeat;*/
+/*	background-attachment: fixed;*/
+/*}*/
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #2d323a;
+}
+
+.uk-navbar-nav > li > a[href='#'] {
+    cursor: pointer;
+}
+
+@media (min-width: 960px) {
+    .uk-navbar-nav {
+        gap: normal;
+    }
+}

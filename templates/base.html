@@ -1,0 +1,28 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html>
+{% include "head.html" %}
+<body class="home page-template-default page page-id-72 tm-isblog wp-front_page wp-page wp-page-72 custom-background">
+<div class="tm-page-bg">
+    <div class="uk-container uk-container-center">
+        <div class="tm-container">
+            <div class="tm-top-block tm-grid-block">
+                {% include "menu.html" %}
+            </div>
+            <div class="tm-middle uk-grid">
+                <div class="tm-main uk-width-medium-1-1">
+                    <main class="tm-content">
+                    <article class="uk-article">
+                        {% block content %}{% endblock %}
+                    </article>
+                    </main>
+                </div>
+            </div>
+            <footer class="tm-footer">
+                {% include "footer.html" %}
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>
