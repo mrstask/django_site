@@ -28,3 +28,27 @@
         gap: normal;
     }
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: grey;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -40px; /* adjust this value as per your need */
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+.carousel-indicators button {
+    background-color: grey;
+}
+.carousel-indicators [data-bs-target] {
+    background: grey;
+}
