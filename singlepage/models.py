@@ -10,6 +10,9 @@ class SinglePage(models.Model):
     seo_keywords = models.CharField(max_length=300, blank=True, null=True)
     body = models.TextField()
 
+    def __str__(self):
+        return self.title
+
     def save(self, *args, **kwargs):
         if not self.seo_title:
             self.seo_title = self.title[:60]
