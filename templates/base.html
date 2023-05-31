@@ -9,19 +9,17 @@
             <div class="tm-top-block tm-grid-block">
                 {% include "menu.html" %}
             </div>
+            <section class="tm-top-a uk-grid tm-grid-block" data-uk-grid-match="{target:'> div > .uk-panel'}">
+                {% load slider_tags %}
+                {% render_slider_items page.id '["main_slider"]' %}
+            </section>
             <div class="tm-middle uk-grid">
-                <div class="tm-main uk-width-medium-1-1">
-                    <main class="tm-content">
-                    <article class="uk-article">
-                        {% block content %}{% endblock %}
-                    </article>
-                    </main>
-                </div>
+                {% block content %}{% endblock %}
             </div>
-            <footer class="tm-footer">
-                {% include "footer.html" %}
-            </footer>
         </div>
+        <footer class="tm-footer">
+            {% include "footer.html" %}
+        </footer>
     </div>
 </div>
 </body>

@@ -1,3 +1,4 @@
+from ckeditor_uploader.fields import RichTextUploadingField
 from django.db import models
 from django.utils.text import slugify
 from django.utils.html import strip_tags
@@ -8,7 +9,7 @@ class SinglePage(models.Model):
     seo_title = models.CharField(max_length=200, blank=True, null=True)
     seo_description = models.CharField(max_length=300, blank=True, null=True)
     seo_keywords = models.CharField(max_length=300, blank=True, null=True)
-    body = models.TextField()
+    body = RichTextUploadingField()
 
     def __str__(self):
         return self.title
